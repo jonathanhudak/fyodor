@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "templates/head.njk" %}
+
+<body>
+    <header class="u-grid">
+        <a href="{{ '/' }}">Фёдор</a>
+        <b>{{ message }}</b>
+    </header>
+    <main>
+    {% block content %}
+        This is the default content
+    {% endblock %}
+    </main>
+</body>
+</html>

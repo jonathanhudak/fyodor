@@ -1,0 +1,17 @@
+{% extends "templates/page.njk" %}
+
+{% block content %}
+
+<div>
+<h1>{{ title | safe }}</h1>
+<strong>{{date | dateDisplay}}</strong>
+{{ content | safe }}
+
+<ul class="u-grid">
+{% for image in galleryImages %}
+  <li><img src="{{ image }}" /></li>
+{% else %}
+{% endfor %}
+</ul>
+</div>
+{% endblock %}

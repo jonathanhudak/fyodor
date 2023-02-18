@@ -1,0 +1,11 @@
+---
+layout: layout.njk
+---
+
+<h1>Hello I am Фёдор</h1>
+
+<ul>
+  {% for post in search.pages("type=post") %}
+  <li>{{post.data.date | dateDisplay }} - <a href="{{ post.data.url }}">{{ post.data.title }}</a></li>
+  {% endfor %}
+</ul>
