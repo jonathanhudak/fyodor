@@ -41,5 +41,5 @@ collections:
           label: Image
           name: image
           widget: image
-site_url: 'https://jonathanhudak.github.io/fyodor/'
+site_url: 'https://jonathanhudak.github.io/fyodor'
 local_backend: false
