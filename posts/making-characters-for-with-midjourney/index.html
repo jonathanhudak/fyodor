@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Making characters with AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+      rel="stylesheet"
+      href="https://the.missing.style/v1.0.8/missing.css"
+    />
+    <style>
+      /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,4.95,4,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+      /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,4,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+      :root {
+        --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem);
+        --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
+        --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+        --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+        --step-2: clamp(1.62rem, calc(1.5rem + 0.58vw), 1.95rem);
+        --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+        --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+      }
+      .title {
+        font-family: "system-ui, sans-serif";
+        font-size: var(--step-4);
+      }
+
+      /* @link https://utopia.fyi/grid/calculator?c=320,18,1.2,1240,20,1.25,4,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,8 */
+
+      :root {
+        --grid-max-width: 52.5rem;
+        --grid-gutter: var(
+          --space-s-l,
+          clamp(1.13rem, calc(0.28rem + 4.23vw), 2.5rem)
+        );
+        --grid-columns: 8;
+      }
+
+      .u-container {
+        max-width: var(--grid-max-width);
+        padding-inline: var(--grid-gutter);
+        margin-inline: auto;
+      }
+
+      .u-grid {
+        display: grid;
+        gap: var(--grid-gutter);
+      }
+
+      #app {
+        padding: calc(var(--grid-gutter) * 2);
+      }
+    </style>
+</head>
+
+<body>
+    <header class="u-grid">
+        <a href="/">Фёдор</a>
+        <b></b>
+    </header>
+    <main>
+    
+
+<div>
+<h1>Making characters with AI</h1>
+<strong>2/16/2023</strong>
+<p>These are some characters that Midjourney created based on the prompts I gave it.</p>
+
+
+<ul class="u-grid">
+
+  <li><img src="/media/hudak_an_orange_lego_mini_figure._He_is_in_a_boat_in_the_ocean._e02113fb-abf3-4b84-ba9e-7dea371aafd3.png" /></li>
+
+  <li><img src="/media/hudak_cartoon_character_in_the_shape_of_a_yellow_triangle_frien_17a85643-01b0-463d-9392-db72052758c5.png" /></li>
+
+  <li><img src="/media/hudak_cartoon_character_in_the_shape_of_a_yellow_triangle_frien_cd871af5-bd23-449f-8ccf-cc32f67f87ee.png" /></li>
+
+</ul>
+</div>
+
+    </main>
+</body>
+</html>
