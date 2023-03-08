@@ -9,7 +9,7 @@
 
 <ul class="u-grid">
 {% for image in galleryImages %}
-  <li><img src="{{ image }}" /></li>
+  <li><img src="{{ image | siteUrl }}" /></li>
 {% else %}
 {% endfor %}
 </ul>
