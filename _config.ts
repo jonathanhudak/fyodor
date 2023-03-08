@@ -1,7 +1,9 @@
 import lume from "lume/mod.ts";
 import netlifyCMS from "lume/plugins/netlify_cms.ts";
 
-const site: lume.Options = lume();
+const site: lume.Options = lume({
+  location: new URL("https://jonathanhudak.github.io/fyodor/"),
+});
 
 site.copy("media", "media");
 

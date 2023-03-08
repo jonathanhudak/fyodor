@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Deno environment
         uses: denoland/setup-deno@v1
@@ -19,7 +19,7 @@ jobs:
 
       - name: Build site
         run: |
-          deno task build --location=https://jonathanhudak.github.io/fyodor/
+          deno task build
       - name: DeployDeploy to GitHub Pages
         if: success()
         # https://github.com/peaceiris/actions-gh-pages
