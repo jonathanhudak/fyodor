@@ -7,6 +7,6 @@ title: Фёдор
 
 <ul>
   {% for post in search.pages("type=post") %}
-  <li>{{post.data.date | dateDisplay }} - <a href="{{ post.data.url }}">{{ post.data.title }}</a></li>
+  <li>{{post.data.date | dateDisplay }} - <a href="{{ post.data.url | siteUrl }}">{{ post.data.title }}</a></li>
   {% endfor %}
 </ul>
