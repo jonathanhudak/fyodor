@@ -53,6 +53,22 @@
       #app {
         padding: calc(var(--grid-gutter) * 2);
       }
+
+      .gallery, .posts-index  {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .posts-index li {
+        margin-bottom: var(--step-4);
+      }
+
+      .post-thumbnail {
+        max-height: 400px;
+        width: auto;
+        display: block;
+        margin: var(--step-2) 0;
+      }
     </style>
 </head>
 
@@ -66,11 +82,13 @@
 
 <h1>Hello I am Фёдор</h1>
 
-<ul>
+<ol class="posts-index">
   
-  <li>2/16/2023 - <a href="https://jonathanhudak.github.io/fyodor/posts/making-characters-for-with-midjourney/">Making characters with AI</a></li>
+  <li>3/19/2023 - <a href="https://jonathanhudak.github.io/fyodor/posts/introducing-doris-and-waffle/">Introducing Doris and Waffle</a> <a href="https://jonathanhudak.github.io/fyodor/posts/introducing-doris-and-waffle/"><img class="post-thumbnail" src="https://jonathanhudak.github.io/fyodor/media/cover.png" /></a></li>
   
-</ul>
+  <li>2/16/2023 - <a href="https://jonathanhudak.github.io/fyodor/posts/making-characters-for-with-midjourney/">Making characters with AI</a> <a href="https://jonathanhudak.github.io/fyodor/posts/making-characters-for-with-midjourney/"><img class="post-thumbnail" src="https://jonathanhudak.github.io/fyodor/media/hudak_cartoon_character_in_the_shape_of_a_yellow_triangle_frien_cd871af5-bd23-449f-8ccf-cc32f67f87ee.png" /></a></li>
+  
+</ol>
 
 
     </main>

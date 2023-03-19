@@ -53,6 +53,22 @@
       #app {
         padding: calc(var(--grid-gutter) * 2);
       }
+
+      .gallery, .posts-index  {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .posts-index li {
+        margin-bottom: var(--step-4);
+      }
+
+      .post-thumbnail {
+        max-height: 400px;
+        width: auto;
+        display: block;
+        margin: var(--step-2) 0;
+      }
     </style>
 </head>
 
@@ -70,7 +86,7 @@
 <p>These are some characters that Midjourney created based on the prompts I gave it.</p>
 
 
-<ul class="u-grid">
+<ul class="u-grid gallery">
 
   <li><img src="https://jonathanhudak.github.io/fyodor/media/hudak_an_orange_lego_mini_figure._He_is_in_a_boat_in_the_ocean._e02113fb-abf3-4b84-ba9e-7dea371aafd3.png" /></li>
 
