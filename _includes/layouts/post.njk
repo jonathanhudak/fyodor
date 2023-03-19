@@ -7,7 +7,7 @@
 <strong>{{date | dateDisplay}}</strong>
 {{ content | safe }}
 
-<ul class="u-grid">
+<ul class="u-grid gallery">
 {% for image in galleryImages %}
   <li><img src="{{ image | siteUrl }}" /></li>
 {% else %}

@@ -5,8 +5,8 @@ title: Фёдор
 
 <h1>Hello I am Фёдор</h1>
 
-<ul>
-  {% for post in search.pages("type=post") %}
-  <li>{{post.data.date | dateDisplay }} - <a href="{{ post.data.url | siteUrl }}">{{ post.data.title }}</a></li>
+<ol class="posts-index">
+  {% for post in search.pages("type=post", "order=desc date=desc") %}
+  <li>{{post.data.date | dateDisplay }} - <a href="{{ post.data.url | siteUrl }}">{{ post.data.title }}</a> <a href="{{ post.data.url | siteUrl }}"><img class="post-thumbnail" src="{{ post.data.thumbnail | siteUrl }}" /></a></li>
   {% endfor %}
-</ul>
+</ol>
