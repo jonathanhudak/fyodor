@@ -19,12 +19,11 @@ jobs:
 
       - name: Build site
         run: |
-          deno task build
+          deno task build --location=https://jonathanhudak.github.io/fyodor
       - name: DeployDeploy to GitHub Pages
         if: success()
         # https://github.com/peaceiris/actions-gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          cname: hudak.codes
           publish_dir: _site
           github_token: ${{ secrets.GITHUB_TOKEN }}
