@@ -2,6 +2,7 @@
 type: post
 title: Introducing Doris and Waffle Web Game
 date: 2024-08-13
+thumbnail: /media/doris-waffle-game-cover.png
 ---
 
 My Pappa and I made a game of Doris and Waffle! We used [Make Real from TLDraw](https://makereal.tldraw.com/) to build it this afternoon. It only has one level for now but maybe soon it will have more!
